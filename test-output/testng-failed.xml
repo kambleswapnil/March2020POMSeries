@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Hub Spot Test automation regression suite]" parallel="tests">
+  <test thread-count="2" verbose="3" name="login page test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.hubspot.tests.LoginPageTest">
+        <methods>
+          <include name="verifyPageTitleTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- login page test(failed) -->
+  <test thread-count="2" verbose="3" name="home page test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.hubspot.tests.HomePageTest">
+        <methods>
+          <include name="verifyLoggedInUserText"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
+    </classes>
+  </test> <!-- home page test(failed) -->
+</suite> <!-- Failed suite [Hub Spot Test automation regression suite] -->
