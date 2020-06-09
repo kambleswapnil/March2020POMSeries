@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Hub spot Test automtion regression suite" duration-ms="25741" started-at="2020-06-04T18:48:45Z" finished-at="2020-06-04T18:49:11Z">
+  <suite name="Hub spot Test automtion regression suite" duration-ms="30090" started-at="2020-06-09T18:28:00Z" finished-at="2020-06-09T18:28:30Z">
     <groups>
     </groups>
-    <test name="HubSpot App test" duration-ms="25741" started-at="2020-06-04T18:48:45Z" finished-at="2020-06-04T18:49:11Z">
+    <test name="HubSpot App test" duration-ms="30090" started-at="2020-06-09T18:28:00Z" finished-at="2020-06-09T18:28:30Z">
       <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@7a4ccb53]" name="setup" is-config="true" duration-ms="6079" started-at="2020-06-04T18:48:45Z" finished-at="2020-06-04T18:48:51Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@6aeb35e6]" name="setup" is-config="true" duration-ms="9450" started-at="2020-06-09T18:28:00Z" finished-at="2020-06-09T18:28:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@7a4ccb53]" name="verifySignUpLinkTest" duration-ms="5310" started-at="2020-06-04T18:48:51Z" finished-at="2020-06-04T18:48:56Z">
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@6aeb35e6]" name="verifySignUpLinkTest" duration-ms="5703" started-at="2020-06-09T18:28:09Z" finished-at="2020-06-09T18:28:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignUpLinkTest -->
-        <test-method status="FAIL" signature="verifyLoginPageTitleTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@7a4ccb53]" name="verifyLoginPageTitleTest" duration-ms="10298" started-at="2020-06-04T18:48:57Z" finished-at="2020-06-04T18:49:07Z">
+        <test-method status="FAIL" signature="verifyLoginPageTitleTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@6aeb35e6]" name="verifyLoginPageTitleTest" duration-ms="10269" started-at="2020-06-09T18:28:15Z" finished-at="2020-06-09T18:28:25Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for title to contain "HubSpot Login123". Current title: "HubSpot Login" (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SWAPNILKAMBLE', ip: '169.254.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ekSource\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: fdb296f068851ce06b5ce74a1a1ae99c]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ekSource\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8a2f3e06ccd8c6822e3a9a96896cdbe5]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "HubSpot Login123". Current title: "HubSpot Login" (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SWAPNILKAMBLE', ip: '169.254.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ekSource\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: fdb296f068851ce06b5ce74a1a1ae99c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ekSource\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8a2f3e06ccd8c6822e3a9a96896cdbe5
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at com.qa.hubspot.utils.ElementUtil.waitForTitleToBePresent(ElementUtil.java:75)
@@ -68,11 +68,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@7a4ccb53]" name="loginTest" duration-ms="471" started-at="2020-06-04T18:49:08Z" finished-at="2020-06-04T18:49:08Z">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@6aeb35e6]" name="loginTest" duration-ms="809" started-at="2020-06-09T18:28:26Z" finished-at="2020-06-09T18:28:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@7a4ccb53]" name="tearDown" is-config="true" duration-ms="2343" started-at="2020-06-04T18:49:08Z" finished-at="2020-06-04T18:49:11Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@6aeb35e6]" name="tearDown" is-config="true" duration-ms="2589" started-at="2020-06-09T18:28:27Z" finished-at="2020-06-09T18:28:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
