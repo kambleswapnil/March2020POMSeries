@@ -1,49 +1,46 @@
 package com.qa.hubspot.tests;
 
-import java.util.Properties;
-
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.qa.hubspot.base.BasePage;
-import com.qa.hubspot.pages.LoginPage;
+import com.qa.hubspot.base.BaseTest;
+import com.qa.hubspot.listeners.ExtentReportListener;
+import com.qa.hubspot.listeners.TestAllureListener;
 import com.qa.hubspot.utils.Constants;
 
-public class LoginPageTest {
-	WebDriver driver;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 
-	BasePage basePage;
-	LoginPage loginPage;
-	Properties prop;
-
-	@BeforeTest
-	public void setup() {
-		basePage = new BasePage();
-		prop = basePage.init_prop();
-		driver = basePage.init_driver(prop);
-		loginPage = new LoginPage(driver);
+@Listeners(TestAllureListener.class)
+@Epic("Epic - 101 : design login page with different features...")
+@Story("US - 102 : design basic login page with singup, title and login form...")
+public class LoginPageTest extends BaseTest {
+	
+	@Test(priority = 2)
+	@Description("verify Login Page Title Test.....")
+	@Severity(SeverityLevel.NORMAL)
+	public void verifyLoginPageTitleTest() {
+		String title = loginPage.getLoginPageTitle();
+		System.out.println("login page title is: " + title);
+		Assert.assertEquals(title, Constants.LOGIN_PAGE_TITLE, "login page title is not matched...");
 	}
 
 	@Test(priority = 1)
-	public void verifyPageTitleTest() {
-		String title = loginPage.getPageTitle();	
-		Assert.assertEquals(title, Constants.LOGIN_PAGE_TITLE,"Title not match");
-	}
-
-	@Test(priority = 2)
+	@Description("verify sugn up link test.....")
+	@Severity(SeverityLevel.CRITICAL)
 	public void verifySignUpLinkTest() {
-		Assert.assertTrue(loginPage.verifySignUpLink(), "SignUp link is not displayed...");
+		Assert.assertTrue(loginPage.verifySignUpLink(), "sing up link is not displayed....");
 	}
 
 	@Test(priority = 3)
+	@Description("verify Login Test.....")
+	@Severity(SeverityLevel.BLOCKER)
 	public void loginTest() {
 		loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
-	@AfterTest
-	public void tearDown() {
-		driver.close();
-	}
+
 }
